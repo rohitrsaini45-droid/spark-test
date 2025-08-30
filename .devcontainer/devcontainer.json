@@ -1,0 +1,14 @@
+{
+  "name": "Spark Delta Dev",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "python.pythonPath": "/usr/bin/python3"
+  },
+  "extensions": [
+    "ms-python.python"
+  ]
+}
