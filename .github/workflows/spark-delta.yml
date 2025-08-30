@@ -10,5 +10,6 @@ jobs:
       - name: Build Spark Delta Image
         run: docker build -t databricks-spark-delta .
       - name: Run Delta Test
-        run: docker run --rm -v ${{ github.workspace }}:/workspace databricks-spark-delta \
-             python3 /workspace/spark_delta_demo.py
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/workspace databricks-spark-delta \
+          python3 /workspace/spark_delta_demo.py
