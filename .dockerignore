@@ -1,0 +1,17 @@
+# Ignore Git stuff
+.git
+.gitignore
+
+# Ignore local data
+data/
+*.csv
+*.parquet
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore VSCode workspace settings
+.vscode/
+.devcontainer/
